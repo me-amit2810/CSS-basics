@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility & Z-index</title>
+</head>
+<style>
+    .box{
+        height: 120px;
+        width: 200px;
+        border: 2px solid white;
+        border-radius: 20px;
+        position: relative;
+    }
+    .box1{
+        width: 100px;
+        height: 160px;
+    }
+    #yellow{
+        background-color: yellow;
+        border-radius: 20px;
+        border: 2px solid white;
+        position: relative;
+    }
+    #red{
+        background-color: red;
+        z-index: 100;
+    }
+    #green{
+        background-color: green;
+        top: -40px;
+        left: 40px;
+        /* this will vanish content and leaves a blank space */
+        /* visibility: hidden; */
+    }
+    #blue{
+        background-color: blue;
+        top: -80px;
+        left: 80px;
+    }
+    #black{
+        background-color: black;
+         /* this will vanish content and do not leave a blank space */
+        display: none;
+    }
+</style>
+<body>
+    <div class="box" id="red"></div>
+    <div class="box" id="green"><div class="box1" id="yellow"></div>
+    <div class="box" id="blue"></div></div>
+    <div class="box" id="black"></div>
+</body>
+</html>

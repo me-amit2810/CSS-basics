@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Websites</title>
+    <style>
+        html{
+            font size: 20px;
+        }
+        .container{
+            border: 2px solid black;
+            margin: 2px;
+            display: none;
+        }
+        @media only screen and (max-width: 600px){
+            #box-1{
+                display: block;
+                background-color: burlywood;
+                font-size: 2rem;
+                text-align: center;
+
+            }
+        }
+        @media only screen and (min-width: 600px) and (max-width: 900px){
+            #box-2{
+                display: block;
+                background-color: aquamarine;
+                font-size: 2rem;
+                text-align: center;
+
+            }
+        }
+        @media only screen and (min-width: 900px) and (max-width: 1200px){
+            #box-3{
+                display: block;
+                background-color: rgb(165, 165, 231);
+                font-size: 2rem;
+                text-align: center;
+
+            }
+        }
+        @media only screen and (min-width: 1200px){
+            #box-4{
+                display: block;
+                background-color: rgb(255, 255, 255);
+                font-size: 2rem;
+                text-align: center;
+        }
+       </style>
+</head>
+<body>
+    <div class="container" id="box-1">This is Smartphone.</div>
+    <div class="container" id="box-2">This is Tablet.</div>
+    <div class="container" id="box-3">This is monitor.</div>
+    <div class="container" id="box-4">This is ultrawide monitor.</div>
+</body>
+</html>

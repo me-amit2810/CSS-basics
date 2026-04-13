@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons and links</title>
+    <style>
+        body{
+            /* background-image: linear-gradient(to right, orange, white, green); */
+            background-color: burlywood;
+        }
+        .container{
+            width: 350px;
+            background-image: linear-gradient(to right,white,burlywood);;
+            margin: auto;
+            padding: 10px;
+            border: 2px solid burlywood;
+            border-radius: 20px;
+        }
+        .container a{
+            text-decoration: none;
+            color: black;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .container a:hover{
+            background-color: black;
+            color: white;
+        }
+        .container a:visited{
+            color: blue;
+        }
+        .btn:hover{
+            cursor: pointer;
+        }
+        .btn:active{
+            background-color: aqua;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Click here to visit Google.</p>
+            <a href="HTTPS://google.com" target="_blank">Click Here</a>
+            <button class="btn">Submit</button>
+    </div>
+</body>
+</html>

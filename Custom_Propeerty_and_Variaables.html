@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Property and Variables</title>
+</head>
+<style>
+    :root{
+      --different-color: red;    /* this can be used any where */
+    }
+    .container{
+        --different-color: rgb(56, 114, 139);
+        background-color: var(--different-color); /*this can be only use in this container, local variable*/
+
+    }
+</style> 
+<body>
+    <div class="container">
+        <h1>Full stact web development Course</h1>
+    </div>
+    <div class="container">
+        <h1>C++ Course</h1>
+    </div>
+</body>
+</html>

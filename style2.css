@@ -1,0 +1,23 @@
+/* Universal Selector */
+*{
+    background-color: #8f8fb5;
+}
+/* Identity Selector */
+#para{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+/* Element Selector */
+p{
+    color: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Class Selector */
+.para2{
+    color: aqua;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Group Selectors */
+h1, h2{
+    color: darkorange;
+}
